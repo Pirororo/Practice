@@ -1,0 +1,30 @@
+/* CSS Document */
+		.all{
+/*			max-width: 100%;*/
+			width: 100%;
+		}
+		
+		.main{
+			margin: 0 auto;
+			position: relative;
+			width: 500px;
+		}
+		
+		#deko{
+			position: absolute;
+			left: 450px;
+			top: 130px;
+		}
+		
+		#mune{
+			position: absolute;
+			left: 380px;
+			top: 190px;
+		}
+		
+		#hara{
+			position: absolute;
+			left: 270px;
+			top: 220px;
+			width: 120px;
+		}
