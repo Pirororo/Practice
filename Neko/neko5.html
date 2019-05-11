@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang = "ja"><head>
+	<meta charset="UTF-8">
+	<title>ねこ</title>
+
+
+	<style>
+		body{
+/*			background: */
+		}
+		
+	/*これ入れるとウィンドウ小さくすると縮小されるはず何だけど*/
+		.all{
+/*			max-width: 100%;*/
+			width: 100%;
+		}
+		
+		.main{
+			margin: 0 auto;
+			position: relative;
+			width: 500px;
+		}
+		
+		#deko{
+			position: absolute;
+			left: 450px;
+			top: 130px;
+		}
+		
+		#mune{
+			position: absolute;
+			left: 380px;
+			top: 190px;
+		}
+		
+		#hara{
+			position: absolute;
+			left: 270px;
+			top: 220px;
+			width: 120px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="all">
+		<div class="main">
+			<img class="neko-image" src="gazou/neko_all.png" alt="" name="area1"/>
+			<img src="gazou/neko_deko.png" alt="" id="deko"/>
+			<img src="gazou/neko_mune.png" alt="" id="mune">
+			<img src="gazou/neko_hara.png" alt="" id="hara"/>
+		</div>
+	</div>
+	
+	<script>
+	'use strict'
+		
+		const deko = document.getElementById("deko");
+				deko.addEventListener("click",function(){
+						document.area1.src = "gazou/neko_good.png";
+				});
+		
+		const mune = document.getElementById("mune");
+				mune.addEventListener("click",function(){
+						document.area1.src = "gazou/neko_exce.png";
+				});
+		const hara = document.getElementById("hara");
+				hara.addEventListener("click",function(){
+						document.area1.src = "gazou/neko_soso.png";
+//						console.log("こんにちは"); これやると開発     ＞コンソール＞ログでこの上まで正しいかどうかわかる
+				
+				});
+	</script>
+</body>
+</html>

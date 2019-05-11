@@ -1,0 +1,74 @@
+<!doctype html>
+
+<!--Jquery挑戦-->
+
+<html lang = "ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ねこ</title>
+
+
+	<style>
+		body{
+/*			background: */
+		}
+		#neko{
+			margin: auto;
+			padding-top: 40px;
+			width: 500px
+		}
+		
+		.main{
+			margin: auto;
+			position: relative;
+			width: 500px;
+		}
+		
+		#deko{
+			position: absolute;
+			left: 450px;
+			top: 130px;
+		}
+		
+		#mune{
+			position: absolute;
+			left: 380px;
+			top: 190px;
+		}
+		
+		#hara{
+			position: absolute;
+			left: 270px;
+			top: 220px;
+			width: 120px;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	
+	
+		<div class="main">
+			<img src="gazou/neko_all.png" alt="" name="area1" id="all"/>
+			<img src="gazou/neko_deko.png" alt="" id="deko" />
+			<img src="gazou/neko_mune.png" alt="" id="mune">
+			<img src="gazou/neko_hara.png" alt="" id="hara"/>
+		</div>
+	
+	
+	<script>
+	'use strict'
+
+$(function(){
+	$('#deko').on('click', function(){
+			$('#all img').attr('src','gazou/neko_good.png');
+			return false;
+	});
+})
+	
+		
+	</script>
+</body>
+</html>
